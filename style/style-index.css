@@ -1,0 +1,638 @@
+@font-face {
+    font-family:Inter ;
+    src: url('../fonts/Inter-Medium.ttf');
+}
+@font-face {
+    font-family:Intert;
+    src: url('../fonts/Inter-Thin.ttf');
+}
+@media only screen and (max-width: 600px) {
+    html
+    {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+       width: 100vw;
+       height: 100vh;
+       margin: 0;
+       padding: 0;
+       overflow-y: auto;
+       overflow-x: hidden;
+       background-color: #f1f1f1;
+       display: flex;
+       flex-direction: column;
+    }
+    nav > #logo > #brand-name
+    {
+       display: none;
+    }
+    nav> #searchbar
+    {
+        position: relative;
+        left: 3%!important;
+        width: 120%!important;
+    }
+    nav > #account
+    {
+        width: 32px!important;
+        height: 32px!important;
+    }
+    nav > #account > #account-name
+    {
+        display: none;
+    }
+    #info-box
+    {
+        position: relative;
+        width: 96%!important;
+        left: 0%;
+    }
+    #selection-menu
+    {
+        width: 95%!important;
+        height: auto;
+        left:0px;
+    }
+    #selection-menu > #selection-body
+    {
+        height: fit-content;
+    }
+    #selection-menu > #selections-body > .selection
+    { 
+        height:fit-content;
+    }
+    #selection-menu > #selections-body > .selection > .selection-hidden > .selection-text button
+    {
+        height:32px!important;
+        font-size: 12px;
+        width: 160px!important;
+    }
+    #popup-profile
+    {
+    position: absolute!important;
+    top: 9% !important;
+    }
+}
+html
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav
+{
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+nav > div
+{
+    width: 80%;
+}
+nav > #logo
+{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+nav > #logo > #link > img
+{
+    height: 45px;
+    width: 45px;
+}
+nav > #logo > #link > img:focus
+{
+    outline: 2px solid #005bd3;
+    border-radius: 5px;
+}
+nav > #logo > #brand-name
+{
+    color:white;
+    font-size: 24px;
+    font-family: Inter;
+    font-style: italic;
+    font-weight:lighter;
+}
+nav>#searchbar
+{
+    position: relative;
+    left:14%;
+    width: 45%;
+    height: 35px;
+    background-color: #303030;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    transition: 0.5s;
+    border:0.5px solid #322F33;
+}
+nav>#searchbar:hover
+{
+    border:0.5px solid #616161;
+    height: 34.5px;
+}
+nav > #searchbar:focus{
+    outline: 2px solid #005bd3;
+    border-radius: 5px;
+}
+nav > #searchbar > img
+{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+nav > #searchbar > input
+{
+    width: 100%;
+    height: 90%;
+    border: 0px;
+    font-family: Inter;
+    color:white;
+    font-size: 13px;
+    background-color: #303030;
+}
+nav > #searchbar > input:focus
+{
+    outline: none;
+}
+nav > #flexgrow
+{
+    width: 36%;
+    flex-shrink: 1;
+}
+nav> #notifications
+{
+    background-color: #303030;
+    width: 40px!important;
+    height: 35px!important;
+    border-radius: 5px;
+    display: flex;
+    flex-shrink: 0;;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+nav > #notification:focus
+{
+    outline: 2px solid #005bd3;
+}
+nav> #notifications > img
+{
+    width: 15px!important;
+    height: 17px!important;
+}
+nav > #notifications:hover
+{
+    background-color: #616161;
+}
+nav> #account
+{
+    width: 180px;
+    background-color: #303030;
+    height: 37px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 19px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: 1s;
+}
+nav > #account:focus
+{
+    outline: 2px solid #005bd3;
+    font-size: 500px;
+} 
+nav > #account:hover
+{
+    background-color: #616161;
+}
+nav > #account > #account-name
+{
+    width: 80%;
+    color:#b0b0b0;
+    font-family: Inter;
+    padding: 5px;
+}
+nav > #account > #accountshort
+{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #36fba1;
+    font-size: 13px;
+    text-align: center;
+    font-family: Inter;
+    color:white;
+    font-weight: lighter!important;
+}
+#popup-noti
+{
+    position: absolute;
+    width: 340px;
+    min-height: 80px;
+    top:8%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: Inter;
+    font-size: 13px;
+    justify-content: space-between;
+    display: none;
+}
+#popup-noti > #popup-head
+{
+
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+#popup-noti > #popup-head > #flex-grow
+{
+    width: 75%;
+}
+#popup-noti > #popup-head > img
+{
+    height: 14px;
+    width: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#popup-noti > #popup-body
+{
+    height: 50%;
+}
+#popup-noti > #popup-body > #alerts
+{
+    width: 99%;
+    min-height: 3rem;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popup-profile
+{
+   width: 270px!important;
+   height: 340px!important;
+   position: absolute;
+   top: 7.8%;
+   right: 1%;
+   border-radius: 15px;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   font-family: Inter;
+   font-size: 14px;
+   padding: 5px;
+   display:none;
+}
+#popup-profile > #popup-profile-main
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#popup-profile > #popup-profile-main > #flex-grow
+{
+    width: 80%;
+}
+#popup-profile > #popup-profile-main > img
+{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+#popup-profile > #all-stores
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#popup-profile > #all-stores > img
+{
+    width: 18px;
+    height: 18px;
+}
+#popup-profile > .selections > .selectionp
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+#popup-profile > #popup-profile-main > #profile-photo
+{
+    width: 34px;
+    height: 34px;
+    background-color: #36fba1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#popup-profile > #popup-profile-main > .selections
+{
+    position: relative;
+    left: 10%;
+}
+#popup-profile > .selections > .selectionp
+{
+    cursor: pointer;
+}
+#popup-profile > .selections > .selectionp:focus
+{
+    outline: 2px solid #005bd3!important;
+    border-radius: 5px;
+}
+#popup-profile > #split
+{
+    height: 0.1px;
+    width: 100%;
+    background-color: #616161;
+}
+#popup-profile > .account-selection > #account-infos
+{
+    width: 40%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#popup-profile > .account-selection > #account-infos > #email
+{
+    font-family: 13px;
+    color:#656263;
+}
+#popup-profile > .account-selection > .a-selection
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+#popup-profile > .account-selection > .a-selection:focus
+{
+    outline: 2px solid #005bd3!important;
+    border-radius: 5px;
+}
+#info-box
+{
+    width: 60%;
+    min-height: 55px;
+    background-color: black;
+    border-radius: 5px;
+    position: relative;
+    margin: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #a8a8a8;
+    font-family: Inter;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    transition: 1s;
+}
+#info-box > #text
+{
+    margin-left: 5px;
+    width: 130%;
+    flex-shrink: 1;
+}
+#info-box > #close-icon > img 
+{
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#info-box> a >button
+{
+    height: 30px;
+    width: 100px;
+    flex-shrink: 0;
+    font-family: inherit;
+    font-weight: 200;
+    border-radius: 7px;
+}
+#selection-menu
+{
+    position: relative;
+    width: 60%;
+    height: 800px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: Inter;
+    padding: 7px;
+    margin-top: 10px;
+}
+#selection-menu > #selection-head
+{
+    margin-bottom: 5px;
+    width: 100%;
+    height: 105px;
+    text-wrap: wrap;
+    display: flex;
+    margin-top: 5px;
+}
+#selection-menu > #selection-head > #progress-info > #title
+{
+    font-size: 18px;
+    font-weight: 200;
+}
+#selection-menu > #selection-head > #progress-info > #info-text
+{
+    font-size: 14px;
+    font-family: Inter!important;
+    font-weight: 100;
+} 
+#selection-menu > #selection-head > #progress-info  #progress
+{
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#selection-menu > #selection-head > #progress-info progress {
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    border-radius: 15px!important;
+    margin-left: 100px;
+
+ }
+ #selection-menu > #selection-head > #progress-info progress::-webkit-progress-bar {
+    background-color:#a8a8a8;
+    border-radius: 15px!important;
+ }
+ #selection-menu > #selection-head > #progress-info progress::-webkit-progress-value {
+    background-color: #303030;
+    border-radius: 15px!important;
+ }
+#selection-menu > #selection-head > #flexgrow
+{
+    width: 60%;
+    flex-shrink: 1;
+}
+#selection-menu > #selection-head > #up-down-icon
+{
+    height: 25px;
+    width: 25px;
+}
+#selection-menu > #selection-head > #up-down-icon > img
+{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+#selection-menu > #selections-body
+{
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    vertical-align:bottom;
+    font-weight: lighter;
+    color: black;
+    font-family: Inter;
+    font-size: 14px;
+    display:flex;
+    text-wrap: wrap;
+} 
+#selection-menu > #selections-body > .selection
+{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+#selection-menu > #selections-body > .selection > .selection-title
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+#selection-menu > #selections-body > .selection >  .selection-title > .radio-button
+{
+    width: 23px!important;
+    height: 23px!important;
+    border: 3px dashed black;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+#selection-menu > #selections-body > .selection >  .selection-title > .radio-button > div
+{
+    width: 17px!important;
+    height: 17px!important;
+    background-color: #005bd3;
+    border-radius: 100%;
+    display: none;
+    margin: auto;
+    margin-top: 0.5px;
+}
+#selection-menu > #selections-body > .selection >  .selection-hidden
+{
+    margin-left: 42px;
+    margin-bottom: 10px;
+    display: none;
+    justify-content: center;
+
+}
+#selection-menu > #selections-body > .selection >  .selection-hidden > .selection-text 
+{
+    width:50%;
+    padding: 5px;
+}
+#selection-menu > #selections-body > .selection >  .selection-hidden > .selection-text > a
+{
+    text-decoration: none;
+    color: blue!important;
+}
+#selection-menu > #selections-body > .selection >  .selection-hidden button
+{
+    height: 40px;
+    margin-top: 10px;
+    width: 80px;
+    border-radius: 5px;
+    border: 0.5px;
+    background-color: #434343;
+    color:#e3e3e3;
+    cursor: pointer;
+}
+#selection-menu > #selections-body > .selection > .selection-hidden  #buttons
+{
+    display: flex;
+    align-items: center;
+}
+#selection-menu > #selections-body > .selection > .selection-hidden  #buttons > div
+{
+    margin-top: 10px;
+    margin-left: 15px;
+    color:#656263;
+    cursor: pointer;
+}
+#selection-menu > #selections-body > .selection > .selection-hidden > .flex-grow
+{
+    width: 40%;
+    flex-shrink: 1;
+}
+#selection-menu > #selections-body > .selection > .selection-hidden > .image
+{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+#selection-menu > #selections-body > .selection > .selection-hidden > .image > img
+{
+    width: 120px;
+    height: 120px;
+}

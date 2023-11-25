@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./style/style-index.css">
+    <script src="./script/script-index.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a id='link' href="https://www.shopify.com">
+            <img src="./images/shopify.png" tabindex="1">
+            </a>
+            <div id="brand-name">shopify</div>
+        </div>
+        <div id="searchbar" tabindex="2">
+            <img src="./icons/search-icon.png" >
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div id="flexgrow"></div>
+
+        <div id="notifications" tabindex="4">
+            <img src="./icons/notification.png">
+        </div>
+
+        <div id="account">
+            <div id="account-name" tabindex="5">Davii Collections</div>
+            <img src="#" id="accountshort">
+        </div>
+    </nav>
+    <div id="popup-noti" tabindex="6">
+        <div id="popup-head" tabindex="7">
+            <div id="title">Alerts</div>
+            <div id="flex-grow"></div>
+            <img src="./icons/chck.png" tabindex="8">
+            <img src="./icons/horizantaline.png" tabindex="9">
+        </div>
+        <div id="popup-body">
+            <div id="alerts"><div id='text'>Alerts about your store and account will shown here</div></div>
+        </div>
+    </div>
+    <div id="popup-profile">
+        <div id="popup-profile-main"><img src="#" id="profile-photo"><div id='flex-grow'></div><img src='./icons/chck.png'></div>
+        <div id="all-stores" tabindex="15"><img src="./icons/store.png"><div>All-stores</div></div>
+        <div class="selections">
+            <div class="selectionp" tabindex="10">Help center</div>
+            <div class="selectionp" tabindex="11">Changelog</div>
+            <div class="selectionp" tabindex="12">Community forums</div>
+            <div class="selectionp" tabindex="13">Hire a shopify partner</div>
+            <div class="selectionp" tabindex="14">Keyboard shortcuts</div>
+        </div>
+        <div id="split"></div>
+        <div class="account-selection">
+            <div id="account-infos">
+                <div id="user-name">David Micheal</div>
+                <div id="email">davidmicheal@gmail.com</div>
+            </div>
+            <div class="a-selection" tabindex="16">Manage account</div>
+            <div class="a-selection" tabindex="17">Log out</div>
+        </div>
+    </div>
+    <div id="info-box">
+        <div id="text">Extends your trial for 1$/month for 3 month on selected plan</div>
+        <a href="https://www.shopify.com/pricing"><button id="plan-button" tabindex="18">Select a plan</button></a>
+        <div id="close-icon" tabindex="19">
+            <img src="./icons/close.png">
+        </div>
+    </div>
+    <div id="selection-menu">
+        <div id="selection-head">
+            <div id="progress-info">
+            <div id="title">Setup guide</div>
+            <div id="info-text">Use this personalized guide to get your store up and running<div id="progress"><span id="count">0</span>/5 completed <progress max="100" value="0"></progress></div></div>
+        </div>
+        <div id="flexgrow">
+
+        </div>
+        <div id="up-down-icon">
+            <img src="./icons/up-icon.png" tabindex="20">
+        </div>
+        </div>
+        <div id="selections-body">
+            <div class="selection">
+            <div class="selection-title"><div class="radio-button" tabindex="21" id="item-1"><div></div></div><div class="text">Customize your online store</div></div>
+                <div class="selection-hidden">
+                    <div class="selection-text">
+                       Choose a theme and add your logo,colors and images to reflect your brand.<a href="#">Learn more</a>
+                       <br/>
+                       <button tabindex="22">Customize theme</button>
+                    </div>
+                    <div class="flex-grow"></div>
+                    <div class="image">
+                        <img src="./images/desing.png" >
+                    </div>
+                </div>
+            </div>
+            <div class="selection">
+                <div class="selection-title"><div class="radio-button" id="item-2" tabindex="23"><div></div></div><div class="text">Add your first product</div></div>
+                <div class="selection-hidden">
+                    <div class="selection-text">
+                    Write a description add photos, and set pricing for the products you plan to sell.<a href="#">Learn more</a>
+                      <div id="buttons">
+                        <button id="addProduct" tabindex="24">Add product</button>
+                        <div class="import">Import product</div>
+                      </div>
+                    </div>
+                    <div class="flex-grow">
+                    </div>
+                    <div class="image">
+                        <img src="./images/shopping.png">
+                    </div>
+                </div>
+            </div>
+            <div class="selection">
+                <div class="selection-title"><div class="radio-button" id="item-3" tabindex="25"><div></div></div><div class="text">Add a custom domain</div></div>
+                <div class="selection-hidden">
+                  <div class="selection-text">
+                    Your current domain is 222210mmyshopity.com but you can add a customdomain to help customers find your online store.<a href=#>Learn more</a>
+                    <br/>
+                    <button tabindex="26">Add domain</button>
+                  </div>
+                  <div class="flex-grow"></div>
+                  <div class="image">
+                    <img src="./images/domain.png" >
+                  </div>
+                </div>
+            </div>
+            <div class="selection">
+                <div class="selection-title"><div class="radio-button" id="item-4" tabindex="27"><div></div></div><div class="text">Name your store</div></div>
+                <div class="selection-hidden">
+                  <div class="selection-text">
+                    Your temporaray store is currently named Davii collections.The store name appears in your admin and your online store.<a href="#">Learn more</a>
+                    <br/>
+                    <button tabindex="28">Name store</button>
+                 </div> 
+                 <div class="flex-grow" ></div>
+                 <div class="image" >
+                    <img src="./images/store.png" >
+                 </div>
+                </div>
+            </div>
+            <div class="selection">
+                <div class="selection-title"><div class="radio-button" id="item-5" tabindex="29"><div></div></div>Set up a payment provider</div>
+                <div class="selection-hidden">
+                    <div class="selection-text">
+                      Choose a payment provider to start accepting payments.You'll need to create an account with the payment provider and set it up your Shopify store.<a href="#">Learn more</a>
+                      <br/>
+                      <button tabindex="30">Set up payment</button>
+                    </div>
+                    <div class="flex-grow"></div>
+                    <div class="image"><img src="./images/payment.png" ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
