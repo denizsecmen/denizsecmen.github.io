@@ -519,6 +519,7 @@ nav > #account > #accountshort
 {
     height: 25px;
     width: 25px;
+    margin-left:25px;
 }
 #selection-menu > #selection-head > #up-down-icon > img
 {
