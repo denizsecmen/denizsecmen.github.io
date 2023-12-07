@@ -54,7 +54,7 @@
     #selection-menu
     {
         width: 95%!important;
-        height: auto;
+        min-height: 800px;
         padding-bottom:10px;
         left:0px;
     }
