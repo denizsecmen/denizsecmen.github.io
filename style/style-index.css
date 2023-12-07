@@ -458,7 +458,7 @@ nav > #account > #accountshort
 {
     position: relative;
     width: 60%;
-    height: 800px;
+    min-height: 800px;
     border-radius: 5px;
     box-sizing: border-box;
     background-color: white;
