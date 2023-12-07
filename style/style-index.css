@@ -54,9 +54,8 @@
     #selection-menu
     {
         width: 95%!important;
-        min-height: 850px!important;
-        padding-bottom:10px;
-        left:0px;
+        height:770px!important;
+        padding-bottom: 15px!important;
     }
     #selection-menu > #selection-body
     {
@@ -418,8 +417,11 @@ nav > #account > #accountshort
 {
     width: 60%;
     min-height: 55px;
+    height: auto;
     background-color: black;
     border-radius: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     position: relative;
     margin: 15px;
     margin-bottom: 10px;
@@ -458,7 +460,7 @@ nav > #account > #accountshort
 {
     position: relative;
     width: 60%;
-    min-height: 800px!important;
+    height: 800px;
     border-radius: 5px;
     box-sizing: border-box;
     background-color: white;
@@ -520,7 +522,6 @@ nav > #account > #accountshort
 {
     height: 25px;
     width: 25px;
-    margin-left:25px;
 }
 #selection-menu > #selection-head > #up-down-icon > img
 {
