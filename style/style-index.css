@@ -54,8 +54,9 @@
     #selection-menu
     {
         width: 95%!important;
-        height:770px!important;
-        padding-bottom: 15px!important;
+        min-height: 600px;
+        height: 650px!important;
+        padding-bottom: 10px!important;
     }
     #selection-menu > #selection-body
     {
@@ -460,7 +461,7 @@ nav > #account > #accountshort
 {
     position: relative;
     width: 60%;
-    height: 800px;
+    height: 850px;
     border-radius: 5px;
     box-sizing: border-box;
     background-color: white;
