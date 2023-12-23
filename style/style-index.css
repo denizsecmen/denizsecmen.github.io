@@ -54,7 +54,7 @@
     #selection-menu
     {
         width: 95%!important;
-        height: 660px;
+        height: 650px;
         padding-bottom: 10px!important;
     }
     #selection-menu > #selection-body
@@ -639,3 +639,4 @@ nav > #account > #accountshort
     width: 120px;
     height: 120px;
 }
+
