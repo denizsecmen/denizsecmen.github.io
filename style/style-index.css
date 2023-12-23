@@ -54,8 +54,7 @@
     #selection-menu
     {
         width: 95%!important;
-        min-height: 600px;
-        height: 650px!important;
+        height: 660px;
         padding-bottom: 10px!important;
     }
     #selection-menu > #selection-body
