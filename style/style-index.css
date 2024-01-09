@@ -3,7 +3,7 @@
     src: url('../fonts/Inter-Medium.ttf');
 }
 @font-face {
-    font-family:Intert;
+    font-family:;
     src: url('../fonts/Inter-Thin.ttf');
 }
 @media only screen and (max-width: 600px) {
@@ -135,7 +135,6 @@ nav > #logo > #brand-name
     font-size: 24px;
     font-family: Inter;
     font-style: italic;
-    font-weight:lighter;
 }
 nav>#searchbar
 {
@@ -254,7 +253,6 @@ nav > #account > #accountshort
     text-align: center;
     font-family: Inter;
     color:white;
-    font-weight: lighter!important;
 }
 #popup-noti
 {
@@ -453,7 +451,7 @@ nav > #account > #accountshort
     width: 100px;
     flex-shrink: 0;
     font-family: inherit;
-    font-weight: 200;
+    : 200;
     border-radius: 7px;
 }
 #selection-menu
@@ -480,13 +478,13 @@ nav > #account > #accountshort
 #selection-menu > #selection-head > #progress-info > #title
 {
     font-size: 18px;
-    font-weight: 200;
+    : 200;
 }
 #selection-menu > #selection-head > #progress-info > #info-text
 {
     font-size: 14px;
     font-family: Inter!important;
-    font-weight: 100;
+    : 100;
 } 
 #selection-menu > #selection-head > #progress-info  #progress
 {
@@ -536,7 +534,7 @@ nav > #account > #accountshort
     width: 100%;
     height: 80%;
     vertical-align:bottom;
-    font-weight: lighter;
+    : lighter;
     color: black;
     font-family: Inter;
     font-size: 14px;
